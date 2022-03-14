@@ -1,9 +1,14 @@
+from email.mime import base
 from django.shortcuts import render
 from .models import StudentDetails
 from .serializers import StudentSerializer
 from rest_framework.renderers import JSONRenderer
 from django.http import HttpResponse, JsonResponse
 
+
+
+def home(request):
+    return render(request, 'base.html')
 
 # Model Object - Single Student Data
 def student_detail(request, pk):
