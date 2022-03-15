@@ -22,4 +22,5 @@ urlpatterns = [
     path('', views.home),
     path('api/stuinfo/<int:pk>', views.student_detail),
     path('api/stuinfo/', views.student_list),
+    path('stucreate/', views.student_create),
 ]
