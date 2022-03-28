@@ -1,14 +1,14 @@
 import requests
 import json
-URL = "http://127.0.0.1:8000/stucreate/"
+URL = "https://devhimanshu28.pythonanywhere.com/stucreate/"
 
-data = {
- 'id':4,
- 'stu_name' : 'Sonam',
- 'stu_class': 11,
- 'stu_phone': '123456789',
- 'stu_roll':'1234567',
- 'city':'Kanpur'
+data ={ 
+ 'id':8,
+ 'stu_name' : 'Rudra',
+ 'stu_class': 9,
+ 'stu_phone': '15678',
+ 'stu_roll':'126',
+ 'city':'Lucknow'
 }
 json_data = json.dumps(data)
 r = requests.post(url = URL, data = json_data)
